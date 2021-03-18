@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.parent-container {
+  display: flex;
+  justify-content: center;
+}
+body {
+  background-color: #fdfdfd;
+}
+.main-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 90px;
+  align-content: center;
+  font-family: "Jura", sans-serif;
+}
+.sub-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-side {
+  padding-top: 60px;
+}
+.right-side {
+}
+
+.day {
+  font-family: Jura;
+  font-size: 47px;
+  font-weight: 600;
+  text-align: right;
+  color: #161616;
+}
+.time {
+  font-family: Jura;
+  font-size: 23px;
+  font-weight: 500;
+  text-align: right;
+  color: #414141;
+}
+header {
+  /* position: absolute;
+  left: 147px;
+  top: 81px; */
+
+  font-family: Lobster;
+  font-size: 28px;
+  padding-bottom: 25px;
+
+  color: #2a4d52;
+}
+form {
+  padding-bottom: 180px;
+  display: flex;
+}
+form input {
+  width: 271px;
+  height: 41px;
+  border-radius: 6px;
+  background: #94feb2;
+  border: none;
+  font-family: "Jura", sans-serif;
+  text-align: center;
+  font-size: 23px;
+  color: #545454;
+}
+form button {
+  background: none;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.fa-chevron-circle-right {
+  color: #949cdf;
+  font-size: 2.5rem;
+}
+.city {
+  font-family: Jura;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 47px;
+  padding-bottom: 0px;
+  line-height: auto;
+  color: #545454;
+}
+.temperature {
+  font-family: Jura;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  color: #161616;
+  padding-bottom: 0px;
+  line-height: auto;
+}
+.status {
+  font-family: Jura;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  color: #707070;
+  line-height: auto;
+}
+.image {
+  max-width: 709px;
+}
+.image img {
+  width: 100%;
+}
+
+@media (max-width: 540px) {
+  /* For mobile phones: */
+
+  .main-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    /* display: flex; */
+  }
+  form {
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+
+  .sub-container {
+    justify-content: center;
+  }
+  .left-side p {
+    font-size: 2rem;
+  }
+  .right-side p {
+    text-align: center;
+    font-size: 1.75rem;
+  }
+  .right-side {
+    padding-top: 30px;
+  }
+
+  .day {
+    padding-top: 20px;
+  }
+  .image img {
+    width: 100%;
+  }
+}
